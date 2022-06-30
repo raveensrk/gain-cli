@@ -1,0 +1,35 @@
+* =gain-cli=
+A program to track your gains and log your workouts
+* Description
+- This program will only do reporting like =ledger-cli=
+- The user will maintain a database in plain text
+- The user will track the workout done in a specific format
+- The user can add comments
+- Fields Required
+  - Date, Day
+  - Workout Name
+  - Sets
+  - Reps
+  - Duration
+  - Start time
+  - End time
+  - Rests between sets
+  - Weight or Level or speed
+  - Difficulty
+  - Pain if any
+  - Notes
+* Usage
+#+begin_example
+gain-cli -f database.txt -r report_name
+#+end_example
+* Database format
+#+begin_src org
+  ,* 2022-06-25 - Saturday
+  ,** Workout Name: Treadmill
+  ,- Duration: 10 mins
+  ,- Start time: 8:15 PM
+  ,- End time: 8:25 PM
+  ,- Speed: 7.2
+  ,- Pain: Knees a bit
+  ,- Notes: Got more stamina than when I Started.
+#+end_src
